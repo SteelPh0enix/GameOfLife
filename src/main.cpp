@@ -7,7 +7,7 @@
 
 using namespace std::chrono_literals;
 
-//#define tooltip_enabled
+//#define TOOLTIP_ENABLED
 
 int main() {
   sf::RenderWindow win;
