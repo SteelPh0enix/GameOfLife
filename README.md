@@ -6,7 +6,7 @@ To build it, you need to have SFML and TGUI libraries compiled.
 I don't trust CMake find-scripts, so you have to set SFML and TGUI paths in cmake-gui or with command line.
 Everything is explained in CMakeLists, but you don't have to open it - just use cmake-gui and check out the variables.
 
-After generating Makefile, just open cmd/terminal window in Makefile directory, and use ``make`` command to build it.
+After generating Makefile, just open cmd/terminal window in Makefile directory, and use ``make`` (or ``mingw32-make`` if you are using MinGW) command to build it.
 
 Windows notes: don't forget to copy SFML (graphics, window and *probably* system) and TGUI DLL's to executable directory!
 
