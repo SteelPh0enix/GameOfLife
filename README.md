@@ -1,7 +1,7 @@
 # GameOfLife
 My SFML+TGUI, feature-rich GameOfLife implementation
 
-![Example](https://i.imgur.com/VT5odZD.mp4)
+![Example](https://media.giphy.com/media/26ndIESSohnzGm78A/giphy.gif)
 
 # Build it!
 To build it, you need to have SFML and TGUI libraries compiled.
