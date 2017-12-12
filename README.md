@@ -16,3 +16,5 @@ Note: Did not tested the compilation under Linux. If it won't work, make a bug r
 
 For now, GOL logic is inside GameOfLife class. You can set up rules, tickrate and stuff using methods or constructor. It also features responsive tooltip with acutal cell information.
 More features (like rule/tickrate/stuff settings GUI) will come later.
+
+Tooltip is disabled by default, uncomment #define in main.cpp to show it.
