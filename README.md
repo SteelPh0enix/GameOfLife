@@ -1,6 +1,8 @@
 # GameOfLife
 My SFML+TGUI, feature-rich GameOfLife implementation
 
+![Example](https://i.imgur.com/VT5odZD.mp4)
+
 # Build it!
 To build it, you need to have SFML and TGUI libraries compiled.
 I don't trust CMake find-scripts, so you have to set SFML and TGUI paths in cmake-gui or with command line.
