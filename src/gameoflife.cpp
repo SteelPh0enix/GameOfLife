@@ -123,6 +123,7 @@ void GameOfLife::draw_on(sf::RenderTarget& target) {
     for (std::size_t x{1}; x < board_width; x++)
       if (get_cell_state(x, y)) {
         cell.setPosition((x + 1u) * size.x, (y + 1u) * size.y);
+        cell.setFillColor(sf::Color(30 * get_alive_neightbours(x, y), 100, 0));
         target.draw(cell);
       }
 }
