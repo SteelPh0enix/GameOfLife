@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvee1rgs3kqu8"]
+
+[ext_resource type="Script" uid="uid://chhbgl6a53hst" path="res://scenes/game_pause_menu.gd" id="1_mfrp7"]
+
+[sub_resource type="Theme" id="Theme_n0o2m"]
+
+[sub_resource type="Theme" id="Theme_6x0b0"]
+
+[sub_resource type="Theme" id="Theme_mfrp7"]
+
+[node name="PauseGameMenu" type="VBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_n0o2m")
+script = ExtResource("1_mfrp7")
+
+[node name="ContinueButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_6x0b0")
+theme_override_font_sizes/font_size = 40
+text = "Continue"
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_mfrp7")
+theme_override_font_sizes/font_size = 40
+text = "Exit"
+
+[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

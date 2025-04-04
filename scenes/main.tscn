@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://7457gp700bvl"]
+
+[ext_resource type="Script" uid="uid://bsnsgfny2rqy0" path="res://scenes/main.gd" id="1_o5qli"]
+[ext_resource type="Theme" uid="uid://qxg15qf7pwad" path="res://default_theme.tres" id="2_0wfyh"]
+
+[sub_resource type="Theme" id="Theme_0wfyh"]
+
+[node name="StartMenu" type="Node"]
+script = ExtResource("1_o5qli")
+
+[node name="MainMenuButtons" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.35
+anchor_top = 0.3
+anchor_right = 0.65
+anchor_bottom = 0.7
+offset_right = -0.400085
+offset_bottom = -0.399963
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="StartGameButton" type="Button" parent="MainMenuButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "Starts new session"
+theme = ExtResource("2_0wfyh")
+theme_override_font_sizes/font_size = 40
+text = "Start"
+
+[node name="ExitButton" type="Button" parent="MainMenuButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "Exit the application"
+theme = SubResource("Theme_0wfyh")
+theme_override_font_sizes/font_size = 40
+text = "Exit"
+
+[connection signal="pressed" from="MainMenuButtons/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="MainMenuButtons/ExitButton" to="." method="_on_exit_button_pressed"]
